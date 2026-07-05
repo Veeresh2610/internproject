@@ -1,0 +1,394 @@
+/* =====================================================
+   WRAPPER
+===================================================== */
+.bos-wrapper {
+  padding: 20px;
+  background: #f6f8fb;
+  min-height: 100vh;
+}
+
+
+/* =====================================================
+   BLACK HEADER BAR
+===================================================== */
+.bos-title-bar {
+  background: #1f2a37;
+  color: white;
+  padding: 14px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 6px 6px 0 0;
+}
+
+
+/* =====================================================
+   ACTION BUTTONS ROW (Add Existing / Add New)
+===================================================== */
+.bos-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin: 14px 0 18px;
+}
+
+/* Blue primary button */
+.primary-btn {
+  background: #0d6efd;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.primary-btn:hover {
+  background: #0b5ed7;
+}
+
+/* white + circle */
+.plus-icon {
+  background: white;
+  color: #0d6efd;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+
+/* =====================================================
+   CONTROLS (entries + search)
+===================================================== */
+.bos-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+/* ALWAYS visible border */
+.bos-controls select,
+.bos-controls input {
+  height: 34px;
+  padding: 6px 10px;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  background: #fff;
+  outline: none;
+  box-shadow: none;
+}
+
+/* disable blue glow */
+.bos-controls select:focus,
+.bos-controls input:focus {
+  border: 1px solid #d6d6d6;
+  outline: none;
+  box-shadow: none;
+}
+
+.bos-search {
+  width: 240px;
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+.bos-card {
+  background: white;
+  border-radius: 8px;
+  padding: 18px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.08);
+}
+
+
+/* =====================================================
+   TABLE
+===================================================== */
+.bos-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.bos-table th,
+.bos-table td {
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+  text-align: left;
+}
+
+.bos-table th {
+  background: #f3f4f6;
+  font-weight: 600;
+}
+
+.no-data {
+  text-align: center;
+  padding: 20px;
+  color: gray;
+}
+
+
+/* =====================================================
+   TABLE ACTION BUTTONS
+===================================================== */
+.edit-btn {
+  background: #ffc107;
+  border: none;
+  padding: 6px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.toggle-btn {
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  font-size: 12px;
+}
+
+.toggle-btn.on {
+  background: #28a745;
+}
+
+.toggle-btn.off {
+  background: #6c757d;
+}
+
+
+
+/* =====================================================
+   ================= FORM PAGES ========================
+   Add Existing / Add New
+===================================================== */
+
+/* ================= FORM CARD ================= */
+/* ================= WRAPPER ================= */
+.bos-wrapper {
+  padding: 20px 30px;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ================= HEADER BAR ================= */
+.bos-title-bar {
+  background: #1f2a37;
+  color: #fff;
+  font-weight: 600;
+  font-size: 17px;
+  padding: 12px 18px;
+  border-radius: 6px 6px 0 0;
+}
+
+/* ================= CARD ================= */
+.bos-form-card {
+  background: #fff;
+  border-radius: 0 0 8px 8px;
+  padding: 20px 30px;     /* 🔥 smaller padding */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+/* ================= TWO COLUMN LAYOUT ================= */
+/* EXACT screenshot layout */
+.bos-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 60px;
+  row-gap: 12px;          /* 🔥 smaller gaps */
+}
+
+/* each side */
+.form-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;              /* 🔥 compact */
+}
+
+/* ================= LABEL ================= */
+label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* red star */
+.req {
+  color: #e11d48;
+  margin-left: 3px;
+}
+
+/* ================= INPUTS ================= */
+.bos-two-col input,
+.bos-two-col select {
+  height: 32px;           /* 🔥 smaller height (important) */
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: 1px solid #d6d6d6;
+  font-size: 13px;
+  background: #fff;
+}
+
+.bos-two-col input:focus,
+.bos-two-col select:focus {
+  outline: none;
+  border-color: #0d6efd;
+}
+
+/* placeholder style */
+.bos-two-col input::placeholder {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+/* ================= PASSWORD ================= */
+/* password wrapper */
+.password-group {
+  display: flex;
+  align-items: center;   /* ⭐ vertical align fix */
+  gap: 8px;
+}
+
+/* password input takes full space */
+.password-group input {
+  flex: 1;
+}
+
+/* generate button */
+.generate-btn {
+  width: 32px;          /* ⭐ SAME as input height */
+  height: 32px;         /* ⭐ SAME as input height */
+  background: #f59e0b;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+
+  display: flex;        /* ⭐ center icon */
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+/* ================= BUTTONS ================= */
+.bos-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 18px;  /* 🔥 compact */
+}
+
+.save-btn,
+.reset-btn,
+.cancel-btn {
+  padding: 6px 16px;
+  font-size: 13px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.save-btn {
+  background: #0d6efd;
+  color: white;
+}
+
+.reset-btn {
+  background: #17a2b8;
+  color: white;
+}
+
+.cancel-btn {
+  background: #dc3545;
+  color: white;
+}
+
+
+/* ============================= */
+/* ADD EXISTING USER FORM */
+/* ============================= */
+
+.bos-form-card {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  margin-top: 15px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.08);
+}
+
+.bos-form-grid {
+  display: grid;
+  grid-template-columns: 420px;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.form-group label {
+  width: 120px;
+  font-weight: 500;
+}
+
+.form-group select {
+  width: 300px;
+  height: 36px;
+  padding: 6px 10px;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  background: white;
+}
+
+.required {
+  color: red;
+}
+
+/* buttons */
+.form-actions {
+  margin-top: 25px;
+  display: flex;
+  gap: 12px;
+}
+
+.save-btn {
+  background: #0d6efd;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+

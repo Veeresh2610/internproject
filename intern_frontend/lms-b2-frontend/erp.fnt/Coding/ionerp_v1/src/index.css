@@ -1,0 +1,166 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+:root {
+  --color-primary: theme("colors.primary.light");
+  --color-background: theme("colors.background.light");
+  --color-text: theme("colors.text.light");
+  --color-border: theme("colors.border.light");
+  --color-ring: theme("colors.ring.light");
+}
+
+.dark {
+  --color-primary: theme("colors.primary.dark");
+  --color-background: theme("colors.background.dark");
+  --color-text: theme("colors.text.dark");
+  --color-border: theme("colors.border.dark");
+  --color-ring: theme("colors.ring.dark");
+}
+
+.panel-bg {
+  background-color: #75b9c2;
+}
+
+.text-color-1,
+.main-page-text-color,
+h3 {
+  color: #437880 !important;
+}
+
+.text-color-2 {
+  color: #dcf7ff !important;
+}
+
+.main-page-text-color:hover {
+  color: #ee4744 !important;
+}
+
+.panel-bg-1 {
+  background-color: #dcf7ff;
+}
+
+.button-bg {
+  background-color: #437880;
+  color: #fff;
+}
+/* 
+body {
+    @apply font-sans bg-background-light text-text-light dark: bg-background-dark dark:text-text-dark;
+} */
+
+/* You can add more global styles here */
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+/* .react-datepicker-wrapper input {
+  margin-top: 5px;
+  padding: 6px 10px;
+} */
+
+/* Custom styles for cell editor */
+.ag-theme-alpine .ag-cell-inline-editing input,
+.ag-theme-alpine .ag-cell-inline-editing .ag-input-field-input {
+  border: 2px solid #007bff;
+  /* Add a blue border */
+  border-radius: 4px;
+  /* Rounded corners */
+  /* box-shadow: 0 0 4px rgba(0, 123, 255, 0.5); */
+  padding: 4px;
+  /* Add padding for better appearance */
+  /* outline: none; */
+}
+
+.ag-theme-alpine .ag-cell-inline-editing .ag-input-field-input:focus {
+  border-color: #0056b3;
+  /* Darker border on focus */
+  /* box-shadow: 0 0 6px rgba(0, 86, 179, 0.5);  */
+}
+
+[data-custom-scrollbar]::-webkit-scrollbar {
+  width: 4px;
+}
+
+[data-custom-scrollbar]::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+[data-custom-scrollbar]::-webkit-scrollbar-thumb {
+  background-color: rgb(209 213 219);
+  border-radius: 20px;
+}
+
+.dark [data-custom-scrollbar]::-webkit-scrollbar-thumb {
+  background-color: rgb(75 85 99);
+}
+
+[data-custom-scrollbar]::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(156 163 175);
+}
+
+.dark [data-custom-scrollbar]::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(107 114 128);
+}
+
+@keyframes pulseRoot {
+  0% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 0.4;
+  }
+}
+
+/* form */
+
+.dynamic-form .form-group-name {
+  font-size: 0.95rem;
+}
+
+.dynamic-form label,
+label {
+  font-size: small !important;
+}
+
+.dynamic-form input,
+.dynamic-form select,
+.dynamic-form textarea,
+input,
+select {
+  padding: 0.4rem !important;
+}
+
+.group input,
+#react-select-11-input {
+  padding: 0.2rem !important;
+}
+
+main button {
+  padding: 0.4rem 1rem !important;
+}
+
+.dynamic-form button {
+  padding: 0.3rem 0.6rem !important;
+}
+
+.react-select-box input {
+  padding: 0rem !important;
+}
+
+.font-small,
+.font-small p {
+  font-size: 12px;
+}
+
+.ag-root input {
+  padding: 0.2rem !important;
+}

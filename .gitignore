@@ -1,0 +1,23 @@
+# Root gitignore for internproject
+
+# Frontend ignores
+**/node_modules/
+**/build/
+**/.tsbuildinfo
+**/dist/
+
+# Backend ignores
+**/.venv/
+**/venv/
+**/env/
+**/ENV/
+**/__pycache__/
+**/*.py[cod]
+**/*.class
+**/*.log
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
